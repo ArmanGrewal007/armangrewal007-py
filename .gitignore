@@ -1,0 +1,37 @@
+# Python bytecode files
+__pycache__/
+
+# *.pyc (compiled Python files)
+# *.pyo (optimized bytecode files)
+# *.pyd (Python dynamic module files)
+*.py[cod]
+
+# Distribution files
+dist/
+build/
+*.egg-info/
+
+# Virtual environment
+venv/
+.env/
+.env.local/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE/editor specific files
+# VSCode, PyCharm, Vim
+.vscode/ 
+.idea/
+*.swp
+*.swo
+
+# Pytest cache
+.cache/
+pytest_cache/
+
+# Logs
+*.log
+
+# Backup files (end with ~)
+*~

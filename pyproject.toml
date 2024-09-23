@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "armangrewal007"
+version = "0.1.1"
+description = "A CLI to display Arman Singh Grewal's resume"
+authors = [
+    { name = "Arman Singh Grewal", email = "armancode4u@gmail.com" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "rich"
+]
+
+[project.scripts]
+armangrewal007 = "armangrewal007.cli:main"
