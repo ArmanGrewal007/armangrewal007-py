@@ -218,3 +218,6 @@ def display_resume():
 
 def main():
     display_resume()
+
+if __name__ == "__main__":
+    main()
