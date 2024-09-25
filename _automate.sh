@@ -35,9 +35,15 @@ echo "New version: $new_version"
 read -p "Continue? (y/n): " confirm
 if [[ $confirm == [yY] || $confirm == [yY][eE][sS] ]]; then
   sed -i '' "s/version = \"$current_version\"/version = \"$new_version\"/" pyproject.toml
+  # Remove old dist files
   rm -rf dist/*
+  # Build and upload package to PyPI
   python -m build || python3 -m build
   twine upload dist/*
+  # Build .exe file using pyinstaller
+  pyinstaller --onefile src/armangrewal007/cli.py --name armangrewal007 
+  # Push to github releases
+  # gh release create v$new_version dist/armangrewal007.exe --title "Release v$new_version" --notes "New release with EXE for armangrewal007-py"
 else
   echo "Aborted..."
   exit 1

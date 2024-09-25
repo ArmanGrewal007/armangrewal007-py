@@ -1,3 +1,5 @@
+arman_env/
+
 # Python bytecode files
 __pycache__/
 
@@ -7,7 +9,7 @@ __pycache__/
 *.py[cod]
 
 # Distribution files
-dist/
+# dist/
 build/
 *.egg-info/
 
@@ -35,3 +37,4 @@ pytest_cache/
 
 # Backup files (end with ~)
 *~
+.DS_Store
