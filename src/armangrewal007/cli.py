@@ -1,6 +1,11 @@
 from rich.console import Console
 from rich.text import Text
 from rich.table import Table
+from rich.panel import Panel
+from rich.progress import Progress
+from rich.spinner import Spinner
+import time
+import shutil
 
 
 contact_info = [
@@ -121,13 +126,62 @@ education_data = [
 ]
 
 
+arman = r"""
+          (       *                )           (                           (     
+   (      )\ )  (  `     (      ( /(   (       )\ )      (  (       (      )\ )  
+   )\    (()/(  )\))(    )\     )\())  )\ )   (()/( (    )\))(   '  )\    (()/(  
+((((_)(   /(_))((_)()\((((_)(  ((_)\  (()/(    /(_)))\  ((_)()\ )((((_)(   /(_)) 
+ )\ _ )\ (_))  (_()((_))\ _ )\  _((_)  /(_))_ (_)) ((_) _(())\_)())\ _ )\ (_))   
+ (_)_\(_)| _ \ |  \/  |(_)_\(_)| \| | (_)) __|| _ \| __|\ \((_)/ /(_)_\(_)| |    
+  / _ \  |   / | |\/| | / _ \  | .` |   | (_ ||   /| _|  \ \/\/ /  / _ \  | |__  
+ /_/ \_\ |_|_\ |_|  |_|/_/ \_\ |_|\_|    \___||_|_\|___|  \_/\_/  /_/ \_\ |____|
+"""
+
+
+arman = r"""
+   ('-.     _  .-')  _   .-')      ('-.         .-') _                   _  .-')     ('-.    (`\ .-') /`  ('-.               
+  ( OO ).-.( \( -O )( '.( OO )_   ( OO ).-.    ( OO ) )                 ( \( -O )  _(  OO)    `.( OO ),' ( OO ).-.           
+  / . --. / ,------. ,--.   ,--.) / . --. /,--./ ,--,'         ,----.    ,------. (,------.,--./  .--.   / . --. / ,--.      
+  | \-.  \  |   /`. '|   `.'   |  | \-.  \ |   \ |  |\        '  .-./-') |   /`. ' |  .---'|      |  |   | \-.  \  |  |.-')  
+.-'-'  |  | |  /  | ||         |.-'-'  |  ||    \|  | )       |  |_( O- )|  /  | | |  |    |  |   |  |,.-'-'  |  | |  | OO ) 
+ \| |_.'  | |  |_.' ||  |'.'|  | \| |_.'  ||  .     |/        |  | .--, \|  |_.' |(|  '--. |  |.'.|  |_)\| |_.'  | |  |`-' | 
+  |  .-.  | |  .  '.'|  |   |  |  |  .-.  ||  |\    |        (|  | '. (_/|  .  '.' |  .--' |         |   |  .-.  |(|  '---.' 
+  |  | |  | |  |\  \ |  |   |  |  |  | |  ||  | \   |         |  '--'  | |  |\  \  |  `---.|   ,'.   |   |  | |  | |      |  
+  `--' `--' `--' '--'`--'   `--'  `--' `--'`--'  `--'          `------'  `--' '--' `------''--'   '--'   `--' `--' `------'  
+"""
+
+arman = r"""
+    _,                             ,___                   _
+   / |                            /   /                  //
+  /--|  _   _ _ _   __,  _ _     /  ___   _  , , , __,  // 
+_/   |_/ (_/ / / /_(_/(_/ / /_  (___// (_(/_(_(_/_(_/(_(/_ 
+                                                           
+"""
+
+arman = r"""
+       d8888                                               .d8888b.                                         888 
+      d88888                                              d88P  Y88b                                        888 
+     d88P888                                              888    888                                        888 
+    d88P 888 888d888 88888b.d88b.   8888b.  88888b.       888        888d888 .d88b.  888  888  888  8888b.  888 
+   d88P  888 888P"   888 "888 "88b     "88b 888 "88b      888  88888 888P"  d8P  Y8b 888  888  888     "88b 888 
+  d88P   888 888     888  888  888 .d888888 888  888      888    888 888    88888888 888  888  888 .d888888 888 
+ d8888888888 888     888  888  888 888  888 888  888      Y88b  d88P 888    Y8b.     Y88b 888 d88P 888  888 888 
+d88P     888 888     888  888  888 "Y888888 888  888       "Y8888P88 888     "Y8888   "Y8888888P"  "Y888888 888 
+
+"""
+
+console = Console()
+
 def display_resume():
-    console = Console()
+    global console
 
     # Name
-    header   = Text("Arman Singh Grewal", style="bold underline green")
+    terminal_width = shutil.get_terminal_size().columns
+    ruler = "[white]" + "-" * terminal_width + "[/white]"
+    # console.print();     console.print(ruler)
+    print_centered_ascii(arman)
     console.print()
-    console.print(header, justify="center")
+    # console.print(ruler); console.print()
 
     # Contact Information
     formatted_contact_info = []
@@ -214,10 +268,43 @@ def display_resume():
         education.add_row(edu["institution"], edu["cgpa"])
         education.add_row()
     console.print(education)
+    console.print(Text("Thanks for reading!", style="bold italic on yellow"), justify="center")
+
+# Fake progress bar
+def display_progress():
+    with Progress(transient=True) as progress:
+        task = progress.add_task("[bold yellow]Rendering...", total=100)
+        while not progress.finished:
+            progress.update(task, advance=1)
+            time.sleep(0.01)  # Simulate work being done
+
+# Fake spinner
+def display_spinner():
+    with console.status("[bold green]Loading...[/bold green]", spinner="dots") as status:
+        for _ in range(10):  # Simulate some work
+            time.sleep(0.1)  # Adjust this to change the speed of the spinner
+
+
+
+def print_centered_ascii(ascii_art):
+    terminal_width = shutil.get_terminal_size().columns
+    ascii_lines = ascii_art.splitlines()
+    num_lines = len(ascii_lines)
+
+    for line_num, line in enumerate(ascii_lines, start=1):
+        padding = (terminal_width - len(line)) // 2
+        red = 255
+        green = int(255 * line_num / num_lines)
+        blue = 0
+        console.print(f"{' ' * padding}[rgb({red},{green},{blue})]{line}[/rgb({red},{green},{blue})]")
 
 
 def main():
+    display_progress()
+    # display_spinner()
     display_resume()
+    
+    
 
 if __name__ == "__main__":
     main()
