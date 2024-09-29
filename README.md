@@ -7,6 +7,8 @@
 > [!WARNING]
 > Links and emojis will not be working for Windows users, because PowerShell does not support that (Switch to a better OS 😢)
 
+------------------
+
 <img src="https://icons-theta.vercel.app/icons?i=debian">
 
 For Debian based environments, you can' do `pip install armangrewal007` because Debian considers it is an externally managed package. <br>
