@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "armangrewal007"
-version = "0.1.2"
+version = "0.1.3"
 description = "A CLI to display Arman Singh Grewal's resume"
 authors = [
     { name = "Arman Singh Grewal", email = "armancode4u@gmail.com" }
