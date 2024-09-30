@@ -16,3 +16,6 @@ For Debian based environments, you can't do `pip install armangrewal007` because
 2. Use pipx `sudo apt install pipx` &rarr; `pipx install armangrewal007`
 
 _... `.deb` version is coming soon, to prevent this hassle_
+
+
+![gif](armangrewal007-py-v0.1.3.gif)
