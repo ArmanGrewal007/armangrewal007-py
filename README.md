@@ -3,6 +3,8 @@
   <img src="armangrewal007-py-v0.1.3.gif" />
 </div>
 
+--------
+
 ## Steps to install
 
 - USE THIS COMMAND TO GET THE LATEST PACKAGE, because I update it constantly `pip install --upgrade armangrewal007`
