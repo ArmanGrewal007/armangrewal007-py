@@ -1,4 +1,11 @@
-# Steps to install
+<div align="center">
+  <h1>armangrewal007</h1>
+  <img src="armangrewal007-py-v0.1.3.gif" height="500"/>
+</div>
+
+--------
+
+## Steps to install
 
 - USE THIS COMMAND TO GET THE LATEST PACKAGE, because I update it constantly `pip install --upgrade armangrewal007`
 - Type `armangrewal007` in your terminal to see my resume!
@@ -18,4 +25,4 @@ For Debian based environments, you can't do `pip install armangrewal007` because
 _... `.deb` version is coming soon, to prevent this hassle_
 
 
-![gif](armangrewal007-py-v0.1.3.gif)
+
