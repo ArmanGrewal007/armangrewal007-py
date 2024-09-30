@@ -7,7 +7,6 @@
 > [!WARNING]
 > Links and emojis will not be working for Windows users, because PowerShell does not support that (Switch to a better OS 😢)
 
---------
 
 ## Steps to install
 
