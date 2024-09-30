@@ -1,6 +1,6 @@
 <div align="center">
   <h1>armangrewal007</h1>
-  <img src="armangrewal007-py-v0.1.3.gif" />
+  <img src="armangrewal007-py-v0.1.3.gif" height="500"/>
 </div>
 
 --------
