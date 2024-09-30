@@ -18,4 +18,6 @@ For Debian based environments, you can't do `pip install armangrewal007` because
 _... `.deb` version is coming soon, to prevent this hassle_
 
 
-![gif](armangrewal007-py-v0.1.3.gif)
+<div align="center">
+  <img src="armangrewal007-py-v0.1.3.gif" />
+</div>
