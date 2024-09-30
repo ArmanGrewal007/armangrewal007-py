@@ -1,4 +1,5 @@
 arman_env/
+build/
 
 # Python bytecode files
 __pycache__/
