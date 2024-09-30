@@ -41,7 +41,8 @@ if [[ $confirm == [yY] || $confirm == [yY][eE][sS] ]]; then
   python -m build || python3 -m build
   twine upload dist/*
   # Build .exe file using pyinstaller
-  # pyinstaller --onefile src/armangrewal007/cli.py --name armangrewal007 
+  # wine pyinstaller --onefile src/armangrewal007/cli.py --name armangrewal007 
+  # wine nuitka --standalone --onefile --output-filename="armangrewal007-0.1.3" src/armangrewal007/cli.py 
   # Push to github releases
   # gh release create v$new_version dist/armangrewal007.exe --title "Release v$new_version" --notes "New release with EXE for armangrewal007-py"
 else

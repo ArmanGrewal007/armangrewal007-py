@@ -6,6 +6,12 @@
 4. Raise a PR
 5. I will upload the package to PyPI using twine and my API key `twine upload dist/*`
 
+## Steps to push to homebrew
+6. ... TODO: run some actions in homebrew-armangrewal007
+
+## Steps to push to winget
+7. ... TODO: create a .exe and push to some registry (try github releases)
+
 ## Notes for me
 
 1. Run `pip install -e .` in local to install the module in editable mode, so that when you make changes in the `cli.py` file, you don't need to build the pacakge again, and just run `armangrewal007` to see the changes.
