@@ -5,7 +5,7 @@
 </div>
 
 > [!WARNING]
-> Links and emojis will not be working for Windows users, because PowerShell does not support that (Switch to a better OS 😢)
+> Links🔗 and emojis🤡 will NOT be working for Windows users, because `PowerShell` doesn't support that ... (Switch to a better OS 😢)
 
 
 ## Steps to install
