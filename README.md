@@ -4,6 +4,9 @@
   (This gif is for <code>v0.1.3</code>)
 </div>
 
+> [!WARNING]
+> Links and emojis will not be working for Windows users, because PowerShell does not support that (Switch to a better OS 😢)
+
 --------
 
 ## Steps to install
@@ -11,11 +14,9 @@
 - USE THIS COMMAND TO GET THE LATEST PACKAGE, because I update it constantly `pip install --upgrade armangrewal007`
 - Type `armangrewal007` in your terminal to see my resume!
 
-
-> [!WARNING]
-> Links and emojis will not be working for Windows users, because PowerShell does not support that (Switch to a better OS 😢)
-
 ------------------
+
+## Note for Debian users
 
 <img src="https://icons-theta.vercel.app/icons?i=debian">
 
