@@ -7,12 +7,6 @@
 > [!WARNING]
 > Links🔗 and emojis🤡 will NOT be working for Windows users, because `PowerShell` doesn't support that ... (Switch to a better OS 😢)
 
-<div align="center">
-  QRCode to actual Résumé: <br>
-  <img src="qrcode.png" height="300"/> <br>
-  <a href="https://qrco.de/grewal">https://qrco.de/grewal </a>
-</div>
-
 ## Steps to install
 
 - USE THIS COMMAND TO GET THE LATEST PACKAGE, because I update it constantly `pip install --upgrade armangrewal007`
