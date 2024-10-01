@@ -7,6 +7,11 @@
 > [!WARNING]
 > Links🔗 and emojis🤡 will NOT be working for Windows users, because `PowerShell` doesn't support that ... (Switch to a better OS 😢)
 
+<div align="center">
+  QRCode to actual Résumé: <br>
+  <img src="qrcode.png" /> <br>
+  <a href="https://qrco.de/grewal">https://qrco.de/grewal </a>
+</div>
 
 ## Steps to install
 
