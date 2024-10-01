@@ -21,7 +21,7 @@ For Debian based environments, you can't do `pip install armangrewal007` because
 _... `.deb` version is coming soon, to prevent this hassle_
 
 <div align="center">
-  QRCode to actual Résumé: 
+  QRCode to actual Résumé: <br> 
   <a href="https://armangrewal007.github.io/armangrewal007.pdf"> 
     <img src="qrcode.png" height="300"/> </a>
 </div>
