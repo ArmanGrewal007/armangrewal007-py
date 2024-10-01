@@ -9,7 +9,7 @@
 
 <div align="center">
   QRCode to actual Résumé: <br>
-  <img src="qrcode.png" /> <br>
+  <img src="qrcode.png" height="300"/> <br>
   <a href="https://qrco.de/grewal">https://qrco.de/grewal </a>
 </div>
 
