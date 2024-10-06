@@ -1,8 +1,11 @@
 #! /usr/bin/env bash
 
-# This script is used to automate the process of incrementing the version number
+# Author: Arman Grewal
+###########################################################
+# Automate the process of incrementing the version number
 # and uploading the package to PyPI.
 # My API token is already there in $HOME/.pypirc file
+###########################################################
 
 set -e 
 
